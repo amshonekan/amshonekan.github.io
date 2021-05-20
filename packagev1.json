@@ -1,0 +1,58 @@
+{
+	"name": "amshonekan.github.io",
+	"version": "1.0.0",
+	"description": "tea dragon designs website",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "ts-node src/index.ts",
+		"build": "tsc && shx rm -rf dist/templates && shx cp -r src/templates dist",
+		"lint": "eslint"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/amshonekan/amshonekan.github.io.git"
+	},
+	"bin": {
+		"generage-template": "./dist/index.js"
+	},
+	"author": "Adedunmola Shonekan",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/amshonekan/amshonekan.github.io/issues"
+	},
+	"homepage": "https://amshonekan.github.io",
+	"dependencies": {
+		"@tsconfig/create-react-app": "^1.0.2",
+		"@tsconfig/recommended": "^1.0.1",
+		"@types/express": "^4.17.11",
+		"@types/react": "^17.0.4",
+		"@types/sass": "^1.16.0",
+		"babel-cli": "^6.26.0",
+		"express": "^4.17.1",
+		"inquirer": "^8.0.0",
+		"npm-start": "^1.4.2",
+		"react": "^17.0.2",
+		"react-scripts": "^4.0.3",
+		"sass": "^1.32.12",
+		"shx": "^0.3.3"
+	},
+	"devDependencies": {
+		"@types/ejs": "^3.0.6",
+		"@types/inquirer": "^7.3.1",
+		"@types/node": "^15.0.1",
+		"@types/shelljs": "^0.8.8",
+		"@typescript-eslint/eslint-plugin": "^4.22.0",
+		"@typescript-eslint/parser": "^4.22.0",
+		"eslint": "^7.25.0",
+		"eslint-config-standard": "^16.0.2",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^4.3.1",
+		"eslint-plugin-react": "^7.23.2",
+		"nodemon": "^2.0.7",
+		"ts-node": "^9.1.1",
+		"typescript": "^4.2.4"
+	},
+	"type": "module"
+}
